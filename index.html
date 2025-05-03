@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adicionando o meta viewport para celulares -->
   <title>Serve Bem - Contato</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet"> <!-- Link das fontes Poppins e Dancing Script -->
   <style>
@@ -9,29 +10,31 @@
       background-color: #fff; /* Fundo branco */
       font-family: 'Poppins', sans-serif; /* Fonte Poppins para o corpo */
       text-align: center;
-      padding: 50px;
+      padding: 5vw; /* Usando unidades relativas para responsividade */
       color: #000; /* Texto preto para contrastar com o fundo branco */
-      font-size: 100px; /* Aumentando o tamanho da fonte do corpo */
+      font-size: 4vw; /* A fonte será ajustada para ser proporcional à largura da tela */
     }
 
     .logo {
-      width: 250px;
-      margin-bottom: 40px;
+      width: 60%; /* Tornando a logo responsiva */
+      max-width: 250px;
+      margin-bottom: 5vw;
     }
 
     .company-info {
-      font-size: 50px; /* Aumentando o tamanho da fonte das informações da empresa */
-      font-weight: 300; /* Peso mais leve para o texto mais delicado */
-      margin-top: 20px;
-      color: #333; /* Cor de texto suave */
-      letter-spacing: 1px; /* Espaçamento entre letras */
+      font-size: 8vw; /* Aumentando o tamanho da fonte das informações para celular */
+      font-weight: 300;
+      margin-top: 5vw;
+      color: #333;
+      letter-spacing: 1px;
     }
 
     .social-icons {
       display: flex;
       justify-content: center;
-      gap: 40px;
-      margin-top: 20px;
+      gap: 5vw;
+      margin-top: 5vw;
+      flex-wrap: wrap; /* Permitindo que os ícones se ajustem em telas menores */
     }
 
     .social-item {
@@ -39,11 +42,11 @@
     }
 
     .social-item p {
-      margin-bottom: 10px;
-      font-family: 'Dancing Script', cursive; /* Fonte mais delicada para as frases */
-      font-size: 50px; /* Aumentando o tamanho da fonte das mensagens */
-      font-weight: 500; /* Peso médio para dar um toque mais leve e elegante */
-      color: #555; /* Cor suave para as frases */
+      margin-bottom: 3vw; /* Ajustei o espaçamento para ficar mais harmônico */
+      font-family: 'Dancing Script', cursive;
+      font-size: 5vw; /* Ajustando o tamanho da fonte para celular */
+      font-weight: 500;
+      color: #555;
     }
 
     .social-icons a {
@@ -51,12 +54,33 @@
     }
 
     .social-icons img {
-      width: 100px; /* Aumentando o tamanho das imagens dos ícones */
+      width: 20vw; /* Tamanho dos ícones ajustado para celular */
+      max-width: 80px; /* Garantindo que o ícone não ultrapasse um limite de tamanho */
       transition: transform 0.3s;
     }
 
     .social-icons img:hover {
       transform: scale(1.1);
+    }
+
+    /* Media Query para telas menores que 600px */
+    @media screen and (max-width: 600px) {
+      body {
+        font-size: 6vw; /* Ajustando o tamanho da fonte para telas muito pequenas */
+      }
+
+      .company-info {
+        font-size: 10vw; /* Aumentando um pouco mais o tamanho da fonte para celular */
+      }
+
+      .social-item p {
+        font-size: 7vw; /* Ajuste maior para o texto nas redes sociais */
+      }
+
+      .social-icons img {
+        width: 25vw; /* Aumentando o tamanho dos ícones para telas menores */
+        max-width: 100px; /* Garantindo o máximo de 100px para os ícones */
+      }
     }
   </style>
 </head>
@@ -68,6 +92,8 @@
     <p>Supermercado Serve Bem</p>
     <p>Cássia - MG</p>
   </div>
+
+  <p>Clique nos ícones abaixo para entrar em contato com a gente!</p> <!-- Adicionando a frase explicativa -->
 
   <div class="social-icons">
     <div class="social-item">
