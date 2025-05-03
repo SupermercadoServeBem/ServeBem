@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Serve Bem - Contato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet"> <!-- Link das fontes Poppins e Dancing Script -->
   <style>
     body {
-      background-color: #fff;
-      font-family: Arial, sans-serif;
+      background-color: #fff; /* Fundo branco */
+      font-family: 'Poppins', sans-serif; /* Fonte Poppins para o corpo */
       text-align: center;
       padding: 50px;
+      color: #000; /* Texto preto para contrastar com o fundo branco */
     }
 
     .logo {
@@ -16,10 +18,19 @@
       margin-bottom: 40px;
     }
 
+    .company-info {
+      font-size: 20px;
+      font-weight: 300; /* Peso mais leve para o texto mais delicado */
+      margin-top: 20px;
+      color: #333; /* Cor de texto suave */
+      letter-spacing: 1px; /* Espaçamento entre letras */
+    }
+
     .social-icons {
       display: flex;
       justify-content: center;
       gap: 40px;
+      margin-top: 20px;
     }
 
     .social-item {
@@ -28,8 +39,10 @@
 
     .social-item p {
       margin-bottom: 10px;
-      font-weight: bold;
-      font-size: 16px;
+      font-family: 'Dancing Script', cursive; /* Fonte mais delicada para as frases */
+      font-size: 20px; /* Tamanho maior para dar destaque */
+      font-weight: 500; /* Peso médio para dar um toque mais leve e elegante */
+      color: #555; /* Cor suave para as frases */
     }
 
     .social-icons a {
@@ -50,16 +63,21 @@
 
   <img src="logo.png" alt="Serve Bem" class="logo">
 
+  <div class="company-info">
+    <p>Supermercado Serve Bem</p>
+    <p>Cássia - MG</p>
+  </div>
+
   <div class="social-icons">
     <div class="social-item">
-      <p>Faça seu pedido no WhatsApp</p>
+      <p>Faça Seu Pedido no WhatsApp!</p>
       <a href="https://wa.me/553535411076?text=Olá%2C%20gostaria%20de%20fazer%20um%20pedido%20no%20Serve%20Bem." target="_blank" title="WhatsApp">
         <img src="whatsapp.png" alt="WhatsApp">
       </a>
     </div>
 
     <div class="social-item">
-      <p>Acompanhe nossas ofertas no Instagram</p>
+      <p>Acompanhe Nossas Ofertas no Instagram!</p>
       <a href="https://www.instagram.com/superservebem.cassia/" target="_blank" title="Instagram">
         <img src="instagram.png" alt="Instagram">
       </a>
