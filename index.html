@@ -2,69 +2,68 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Cartão Virtual</title>
+  <title>Cartão Virtual Moderno</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
     }
     .card {
-      background: white;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background-color: #fff;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
       text-align: center;
-      width: 320px;
-    }
-    .card img.icon {
-      width: 40px;
-      margin: 10px;
-      cursor: pointer;
-    }
-    .qr-code {
-      margin-top: 20px;
-    }
-    .qr-code img {
-      width: 150px;
-      border-radius: 8px;
+      max-width: 350px;
+      width: 90%;
     }
     .title {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
+      margin-bottom: 20px;
       color: #333;
-      margin-bottom: 10px;
     }
-    p {
+    .icon {
+      width: 50px;
+      margin: 10px;
+      transition: transform 0.2s;
+    }
+    .icon:hover {
+      transform: scale(1.1);
+    }
+    .contact-label {
       font-size: 14px;
-      color: #555;
+      color: #666;
+      margin-top: 8px;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="title">Meu Cartão Virtual</div>
+    <div class="title">Contato Rápido</div>
 
     <!-- Gmail -->
     <a href="mailto:Sb_caio@hotmail.com" target="_blank" title="Enviar e-mail">
       <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
     </a>
+    <div class="contact-label">Sb_caio@hotmail.com</div>
 
     <!-- WhatsApp -->
     <a href="https://wa.me/5516981017289?text=O%20que%20posso%20ajudar?" target="_blank" title="Fale no WhatsApp">
       <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
-
-    <!-- QR Code -->
-    <div class="qr-code">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://wa.me/5516981017289?text=O%20que%20posso%20ajudar?&size=150x150" alt="QR Code WhatsApp">
-      <p>Escaneie para falar comigo no WhatsApp</p>
-    </div>
+    <div class="contact-label">Clique para conversar no WhatsApp</div>
   </div>
 </body>
 </html>
 
+     
